@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: bold 30px Arial, sans-serif;
+}
+
+
+
+
+
+
+#calculator {
+height: 434px;
+width:60%;
+border:2px solid black;
+box-shadow:1px 0px #70cfd6;
+margin: none;
+padding: 10px 10px 2px; 
+background: linear-gradient(black,#222 );
+border-radius: 15px;
+margin-top: 50px;
+
+}
+
+
+.top span.clear {
+	float: left;
+    
+}
+
+
+.top .screen {
+	height:66px;
+	padding: 0 10px;
+	background-color:#bccd95;
+	border-radius: 10px;
+	box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+	
+	
+	font-size: 17px;
+	line-height: 40px;
+	color: black;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	letter-spacing: 1px;
+    
+}
+
+
+.keys, .top {
+    overflow:hidden;
+margin-top: 8px;}
+
+
+.keys span, .top span.clear {
+   
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 46px;
+	height: 46px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+	margin: 3px 15px 15px 3px;
+	color: lightslategray;
+	line-height: 36px;
+	text-align: center;
+	transition: all .1s ease;
+}
+
+
+.keys span.operator {
+	background:orange;
+    color:white;
+
+    
+}
+
+.keys span.eval {
+	background: rgb(79, 79, 219);
+	box-shadow: gray;
+	color: white;
+}
+
+.top span.clear {
+	background: red;
+	box-shadow: 0px 4px rgb(216, 46, 46);
+	color: white;
+}
+
+/*  hover effects */
+.keys span:hover {
+	background:rgb(99, 196, 99);
+	box-shadow: 0px 2.5px rgb(236, 223, 223);
+    border: 3px white;
+	color: white;
+}
+
+.top span.clear:hover {
+	background: rgb(147, 211, 50);
+	box-shadow: 0px 4px #5f383a;
+	color: white;
+}
+
+
+.keys span:active {
+    box-shadow: 2px 0px rgba(0, 0, 0, 0.2);
+
+	top: 4px ;
+}
+
+.keys span.eval:active {
+	box-shadow: 1px 0px;
+	top:4px;
+}
+
+.top span.clear:active {
+	box-shadow: 1px 0px #dd3c46;
+    top: 4px;
+}
